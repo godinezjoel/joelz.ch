@@ -44,7 +44,7 @@ const About = () => {
         { year: '2022', title: 'Exploration', desc: 'Attended many Trial days at various companies to explore the world of IT.' },
         { year: '2023', title: 'First Big Project', desc: 'Developed a 3D shooter game in Unity for my 9th-grade final project.' },
         { year: '2024', title: 'Swiss Post', desc: 'Started my apprenticeship as an Software Engineer at Swiss Post.' },
-        { year: '2026', title: 'Second Year', desc: 'In my second year at Swiss Post. Working on a productive team. Working with Angular.' }
+        { year: '2026', title: 'Second Year', desc: 'In my second year at Swiss Post. Working on a productive team with Angluar.' }
     ];
 
     const timelineRef = useRef(null);
@@ -230,7 +230,7 @@ const About = () => {
                                 Hi, I'm Joel.
                             </h3>
                             <p style={styles.introText}>
-                                I'm a 17-year-old half Swiss, half Guatemalan developer based in Münsingen (3110), Switzerland.
+                                I'm a 17-year-old half Swiss, half Guatemalan developer based in Switzerland.
                                 Currently in my second year as an Software Engineer apprentice at Swiss Post, I love designing unique user experiences.
                             </p>
                             <p style={styles.introText}>

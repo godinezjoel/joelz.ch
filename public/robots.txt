@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joelz.ch/sitemap.xml

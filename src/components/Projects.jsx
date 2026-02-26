@@ -12,7 +12,7 @@ const Projects = () => {
         {
             title: "Bazario",
             description: "Its an Web Shop, which was entirely made out of just Javascript, HTML and CSS (No Frameworks). It was a project for our apprenticeship, made with my friends.",
-            tags: ["React", "Vite", "Design"],
+            tags: ["HTML", "CSS", "Javascript"],
             link: "https://bazario.oulei.ch/"
         },
         {

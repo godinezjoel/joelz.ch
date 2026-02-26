@@ -33,6 +33,9 @@ function App() {
                 <React.Suspense fallback={<Loading />}>
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<Home />} />
+                        <Route path="/projects" element={<Home />} />
+                        <Route path="/contact" element={<Home />} />
                         <Route path="/terms" element={<Terms />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>

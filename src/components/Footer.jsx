@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Github, Instagram, Linkedin } from 'lucide-react';
+import { Github, Instagram, Linkedin } from 'lucide-react';
 import TiktokIcon from './TiktokIcon';
 import { Link } from 'react-router-dom';
 
@@ -31,10 +31,7 @@ const Footer = () => {
             color: 'var(--text-secondary)',
             fontSize: '1rem'
         },
-        heart: {
-            color: '#ef4444', // Red color for heart
-            fill: '#ef4444'
-        },
+
         links: {
             display: 'flex',
             gap: '2rem',
@@ -59,7 +56,7 @@ const Footer = () => {
 
                 {/* Made With */}
                 <div style={styles.madeWith}>
-                    Made with <Heart size={16} style={styles.heart} /> by Joel Godinez
+                    Made with <img src="/pixel-heart.svg" alt="Heart" style={{ height: '16px', width: '16px', display: 'inline-block', verticalAlign: 'middle' }} /> by Joel Godinez
                 </div>
 
                 {/* Social Links (Duplicated from About) */}

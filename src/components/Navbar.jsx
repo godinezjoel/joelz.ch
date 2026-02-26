@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Terminal, Moon, Sun, Menu, X } from 'lucide-react';
+import { Moon, Sun, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ theme, toggleTheme }) => {
     const [scrolled, setScrolled] = useState(false);
@@ -26,10 +27,9 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (
         <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
             <div className="container nav-container">
-                <a href="/" className="nav-logo" onClick={closeMenu}>
-                    <Terminal size={24} color="#38bdf8" />
-                    Dev.Joel
-                </a>
+                <Link to="/" className="nav-logo" onClick={closeMenu}>
+                    Joelz Portfolio
+                </Link>
 
                 {/* Mobile Menu Button */}
                 <button
@@ -41,9 +41,9 @@ const Navbar = ({ theme, toggleTheme }) => {
                 </button>
 
                 <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-                    <li><a href="/#about" className="nav-link" onClick={closeMenu}>About</a></li>
-                    <li><a href="/#projects" className="nav-link" onClick={closeMenu}>Projects</a></li>
-                    <li><a href="/#contact" className="nav-link" onClick={closeMenu}>Contact</a></li>
+                    <li><Link to="/about" className="nav-link" onClick={closeMenu}>About</Link></li>
+                    <li><Link to="/projects" className="nav-link" onClick={closeMenu}>Projects</Link></li>
+                    <li><Link to="/contact" className="nav-link" onClick={closeMenu}>Contact</Link></li>
 
                     <li>
                         <button

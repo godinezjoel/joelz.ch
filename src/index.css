@@ -880,3 +880,120 @@ nav {
     /* Smaller title on mobile */
   }
 }
+/* Contact Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: rgba(30, 41, 59, 0.5);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+[data-theme='light'] .form-input,
+[data-theme='light'] .form-textarea {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+  background: var(--surface-color);
+}
+
+.form-input.error,
+.form-textarea.error {
+  border-color: #ef4444;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.btn-submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--accent-color);
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(56, 189, 248, 0.4);
+}
+
+.btn-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.success-message {
+  padding: 2rem;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 12px;
+  color: #22c55e;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.global-error-message {
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  color: #ef4444;
+  text-align: center;
+  font-weight: 600;
+}

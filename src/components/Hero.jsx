@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const styles = {
@@ -85,15 +86,15 @@ const Hero = () => {
                 </p>
 
                 <div className="fade-in-up delay-200">
-                    <a href="#projects" className="btn-primary">
+                    <Link to="/projects" className="btn-primary">
                         View My Work
-                    </a>
+                    </Link>
                 </div>
             </div>
 
-            <a href="#about" style={styles.scrollIndicator} aria-label="Scroll down">
+            <Link to="/about" style={styles.scrollIndicator} aria-label="Scroll down">
                 <ArrowDown size={32} />
-            </a>
+            </Link>
         </section>
     );
 };
