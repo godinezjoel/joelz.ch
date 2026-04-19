@@ -6,7 +6,7 @@ const Projects = () => {
         {
             title: "Portfolio Website",
             description: "You're looking at it! A modern, responsive portfolio built with React and Vite to showcase my journey and skills.",
-            tags: ["React", "Vite", "Design"],
+            tags: ["React"],
             link: "#"
         },
         {

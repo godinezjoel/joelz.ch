@@ -19,7 +19,7 @@ const About = () => {
             icon: <Layout size={32} />,
             description: "Building beautiful user interfaces.",
             animation: "animate-float-medium",
-            techs: ["CSS", "HTML", "React", "Angular", ".NET MAUI", "Tailwind"]
+            techs: ["CSS", "HTML", "React", "Angular", ".NET MAUI"]
         },
         {
             title: "Backend & Cloud",
